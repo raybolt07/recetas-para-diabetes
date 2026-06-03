@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta QR - Recetario Diabetes</title>
+    <link rel="stylesheet" href="RECETASTIFG.css">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            background-color: #f4f7f5; 
+            margin: 0; 
+        }
+        .card-qr-stream { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 24px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+            text-align: center; 
+            max-width: 360px;
+            border: 2px solid #e1e8e3;
+        }
+        .card-qr-stream h1 { color: #009cbd; font-size: 22px; margin: 10px 0 15px 0; font-weight: 700; }
+        .card-qr-stream img { 
+            border: 4px solid #009cbd; 
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer-tag { margin-top: 20px; font-weight: bold; color: #639a00; font-size: 15px; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+
+    <!-- Tarjeta calcada a la de Salud Mental pero con estilo UNAHUR -->
+    <div class="card-qr-stream">
+        <img src="Logo_oficial_UNAHur.png" alt="Logo UNAHUR" style="max-width: 140px; border: none; box-shadow: none; border-radius: 0;">
+        <h1>RECETARIO PARA DIABETES</h1>
+        
+        <!-- API Automática de QR Server en Negro Puro para que escanee al toque -->
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://raybolt07.github.io/RECETAS-TIFG/" 
+             alt="QR Recetario">
+             
+        <p class="footer-tag">🟢 ESCANEÁ Y LLEVATE LAS RECETAS 🔵</p>
+        
+        <a href="index.html" style="display: block; background-color: #009cbd; color: white; text-decoration: none; padding: 12px; border-radius: 12px; font-weight: bold; margin-top: 15px; font-size: 14px;">📖 Ver Recetas en PC</a>
+    </div>
+
+</body>
+</html>
